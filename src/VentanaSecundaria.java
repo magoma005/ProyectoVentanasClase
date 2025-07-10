@@ -9,7 +9,7 @@ public class VentanaSecundaria extends JFrame {
         JOptionPane.showMessageDialog(this, "VE A VER SUPERMAN ESTE 8 DE JULIO");
 
         // Crear un JLabel con la imagen
-        ImageIcon imagen = new ImageIcon(getClass().getResource("/12.jpg"));
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/imagenes/12.jpg"));
         JLabel labelImagen = new JLabel(imagen);
 
         // Agregar la imagen al JFrame

@@ -4,7 +4,7 @@ import java.awt.*;
 public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal() {
         setTitle("Ventana de Migue");
-        setSize(500, 400);
+        setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         JTabbedPane pestanas = new JTabbedPane();
@@ -12,7 +12,9 @@ public class VentanaPrincipal extends JFrame {
         // Pestaña 1: Bienvenida
         JPanel panelBienvenida = new JPanel();
         panelBienvenida.setLayout(new BorderLayout());
-        JLabel etiqueta = new JLabel("\"¡Bienvenido a ArmBook!, ¿Cuál es tu nombre?\"");
+        JLabel etiqueta = new JLabel("¡Bienvenido a ArmBook! ¿Cuál es tu nombre?");
+        etiqueta.setFont(new Font("Segoe UI", Font.BOLD, 18));
+        etiqueta.setHorizontalAlignment(SwingConstants.CENTER);
         panelBienvenida.add(etiqueta, BorderLayout.CENTER);
 
         // Botón cambio color
